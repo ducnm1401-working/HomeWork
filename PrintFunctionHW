@@ -1,0 +1,25 @@
+# Nhúng giá trị vào trong chuỗi
+
+#Khai báo biến tuần tự name là Py và py là Thon
+name, py = 'Py', "Thon" 
+#Nhúng 2 giá trị vào hàm print. Hàm sẽ lấy giá trị từ trái qua phải trong %() rồi in lần lượt ra vào từng vị trí %s.
+print('Xin chao %s. Toi la %s' % (name, py))
+#Xin chao Py. Toi la Thon
+
+#Khai báo biến tuần tự x là 123 và y là 456
+x, y = 123, 456
+#Nhúng 2 giá trị vào hàm print. Hàm sẽ lấy giá trị từ trái qua phải bao gồm cả kết quả phép toán trong format() rồi in lần lượt ra vào từng vị trí {}.
+print("Gia tri cua x la {}, y la {} và trung binh la: {}".format(x, y, (x+y)/2))
+#Gia tri cua x la 123, y la 456 và trung binh la: 289.5
+
+#Hàm sẽ lấy giá trị từ trái qua phải trong format() rồi in lần lượt ra vào từng vị trí {}.
+#Vị trí trong format() bắt đầu từ 0,1,2,...Python hiện đang vị trí thứ 0 và JavaScript vị trí thứ 1
+#Hàm print in ra giá trị tương ứng vào các vị trí ghi ra ở 0 và 1
+print("I love {0} and {1}".format('Python', 'JavaScript'))
+#I love Python and JavaScript
+print("I love {1} and {0}".format('Python', 'JavaScript'))
+#I love JavaScript and Python
+
+#Ngoài ra có thể đặt tên thay vào các vị trí trong format(). Hàm print cũng in ra giá vị trị với vị trí tương ứng
+print("Hello {f_name}. I am {my_name}.".format(f_name='John', my_name='PyCore'))
+#Hello John. I am PyCore.
