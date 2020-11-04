@@ -1,0 +1,14 @@
+tong_chu_so = 0
+while True:
+    print("Nhập 1 số nguyên dương n bất kì (n<1000): ")
+    n = int(input())
+    if 1000 < n or n < 0:
+        print("Số nhập vào không thỏa mãn")
+    elif 1000 > n > 0:
+        print("Số đã nhập thỏa mãn")
+        while n > 0:
+            so_chu_so = n % 10
+            tong_chu_so = int(tong_chu_so + so_chu_so)
+            n = n / 10
+        print('Tổng các chữ số là: {}'.format(tong_chu_so))
+        break
