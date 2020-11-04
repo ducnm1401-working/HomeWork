@@ -12,3 +12,4 @@ while True:
             n = n / 10
         print('Tổng các chữ số là: {}'.format(tong_chu_so))
         break
+
