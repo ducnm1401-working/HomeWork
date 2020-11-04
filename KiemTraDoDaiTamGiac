@@ -1,0 +1,12 @@
+a = float(input("Số đo cạnh a: "))
+b = float(input("Số đo cạnh b: "))
+c = float(input("Số do cạnh c: "))
+
+if (a < (b + c)) and (b < (a + c)) and (c < (a + b)):
+    print("Đây là số đo 3 cạnh của tam giác")
+    if a*a == b*b + c*c or b*b == a*a + c*c or c*c == b*b + a*a:
+        print("Đây là tam giác vuông")
+    else:
+        print("Đây không là tam giác vuông")
+else:
+    print("Đây không phải là số đo 3 cạnh của tam giác")
