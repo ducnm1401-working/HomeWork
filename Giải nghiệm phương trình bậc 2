@@ -1,0 +1,29 @@
+import math
+
+print("Giải nghiệm phương trình bậc 2: ax^2 + bx + c = 0  (Kể cả trường hợp a=0)")
+a = float(input("Nhập số a: "))
+b = float(input("Nhập số b: "))
+c = float(input("Nhập số c: "))
+if a == 0:
+    if b == 0:
+        if c == 0:
+            print("Phương trình vô số nghiệm")
+        else:
+            print("Phương trình vô nghiệm")
+    else:
+        if c == 0:
+            print("Phương trình có 1 nghiệm x = 0")
+        else:
+            print("Phương trình có 1 nghiệm x = ", -c / b)
+else:
+    delta = (b ** 2) - (4 * a * c)
+    X_1 = float((-b - math.sqrt(delta)) / (2 * a))
+    X_2 = float((-b + math.sqrt(delta)) / (2 * a))
+    if delta > 0:
+        print("Phương trình có 2 nghiệm phân biệt")
+        print("X_1 = ", round(X_1, 2))
+        print("X_2 = ", round(X_2, 2))
+    elif delta == 0:
+        print("Phương trình có 1 nghiệm X = ", -b / (2 * a))
+    else:
+        print("Phương trình vô nghiệm")
