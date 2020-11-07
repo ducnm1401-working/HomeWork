@@ -11,9 +11,11 @@ while True:
 
 x = float(input("Nhập số x: "))
 
-while i <= n:
+for i in range(n):
     lt = lt * x
     s += lt
-    i += 1
 
+s = s + 1
 print("Tổng là: " + str(s))
+
+
