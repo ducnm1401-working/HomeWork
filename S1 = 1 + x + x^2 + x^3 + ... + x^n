@@ -1,0 +1,19 @@
+i = 0
+lt = 1
+s = 0
+
+print("Tính tổng S1 = 1 + x + x^2 + x^3 + ... + x^n")
+
+while True:
+    n = int(input("Nhập số N nguyên dương: "))
+    if n > 0:
+        break
+
+x = float(input("Nhập số x: "))
+
+while i <= n:
+    lt = lt * x
+    s += lt
+    i += 1
+
+print("Tổng là: " + str(s))
