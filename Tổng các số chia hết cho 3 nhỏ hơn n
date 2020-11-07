@@ -1,0 +1,11 @@
+#Nhập vào số tự nhiên n, tính tổng các số chia hết cho 3 mà nhỏ hơn n
+n = int(input("Nhập số n: "))
+i = 0
+s = 0
+while i < n:
+    if i % 3 == 0:
+        s = s + i
+    i = i + 1
+print(s)
+
+
