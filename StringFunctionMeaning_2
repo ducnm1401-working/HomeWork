@@ -1,0 +1,32 @@
+s = "Hi. i am AbcXyz      "
+#Cho ra vị trí đầu tiền xuất hiện ký tự trong hàm find của chuỗi s.
+#Nếu không có thì cho ra giá trị -1
+print(s.find('yz'))
+#13
+print(s.find('hi'))
+#-1
+
+#Cho ra vị trí cuối cùng xuất hiện ký tự trong hàm rfind của chuỗi s
+#Nếu không có cho giá trị -1
+print(s.rfind('m'))
+#7
+print(s.rfind('o'))
+#-1
+
+#Cho ra giá trị True nếu chuỗi s bắt đầu bằng ký tự trong hàm startswith
+#Nếu không sẽ cho giá trị False
+print(s.startswith("Hi"))
+#True
+print(s.startswith("hi"))
+#False
+
+#Cho ra giá trị True nếu chuỗi s kết thúc bằng ký tự trong hàm endswith
+#Nếu không sẽ cho giá trị False
+print(s.endswith('z'))
+#False
+print(s.endswith(" "))
+#True
+
+#Cho ra chuỗi mới thay thế s1 ở trong chuỗi s thành s2
+print(s.replace('i am', 'he is'))
+#Hi. he is AbcXyz 
