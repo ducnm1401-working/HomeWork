@@ -1,0 +1,8 @@
+s = input("Nhập chuỗi s: ")
+if len(s) < 2:
+    print(" ")
+if len(s) >= 2:
+    print('Chuỗi từ 2 ký tự đầu và 2 ký tự cuối trong chuỗi được nhập vào là: '
+          + s[0], s[1], s[len(s) - 2], s[len(s) - 1]
+          + '\nHai giá trị đầu: ' + s[0], s[1]
+          + '\nHai giá trị cuối: ' + s[len(s) - 2], s[len(s) - 1])
