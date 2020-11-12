@@ -1,0 +1,30 @@
+s = "      Hi. i am AbcXyz      "
+print(s.upper())
+# Chuyển tất cả các chữ cái trong chuỗi s thành chữ IN HOA
+#      HI. I AM ABCXYZ
+
+print(s.lower())
+# Chuyển tất cả các chữ cái trong chuỗi s thành chữ in thường
+#      hi. i am abcxyz
+
+print(s.title())
+# Chuyển tất cả các chữ cái đầu của các từ thành chữ IN HOA và viết thường các chữ còn lại
+#      Hi. I Am Abcxyz
+
+print(s.strip())
+#Xóa tất cả khoảng trắng ở đầu và cuối chuỗi s
+#Hi. i am AbcXyz
+
+print(s.lstrip())
+#Xóa tất cả khoảng trắng ở đầu chuỗi s
+#Hi. i am AbcXyz      
+
+print(s.rstrip())
+#Xóa tất cả khoảng trắng ở cuối chuỗi s
+#      Hi. i am AbcXyz
+
+#Đếm số lần xuất hiện của ký tự trong hàm count của chuỗi s và in ra số int
+print(s.count('o'))
+#0
+print(s.count('i')) 
+#2
