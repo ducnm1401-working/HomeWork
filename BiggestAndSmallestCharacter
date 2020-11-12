@@ -1,0 +1,3 @@
+s = input("Nhập chuỗi s: ")
+print('Ký tự lớn nhất: ' + max(s))
+print('Ký tự nhỏ nhất: ' + min(s))
