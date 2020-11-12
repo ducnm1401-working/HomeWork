@@ -1,0 +1,2 @@
+s = input("Nhập chuỗi s: ")
+print(s.swapcase())
