@@ -1,0 +1,10 @@
+while True:
+    m = float(input("Nhập vị trí thứ m: "))
+    s = input("Nhập chuỗi s: ")
+    if m >= 0 and len(s) > 0:
+        break
+i = int(m)
+if len(s) > i:
+    s = s[0: i:] + s[i + 1::]
+
+print("Chuỗi sau khi xử lý: " + s)
