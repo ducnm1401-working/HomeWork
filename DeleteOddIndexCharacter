@@ -1,0 +1,6 @@
+s = input("Nhập chuỗi s: ")
+new_s = ""
+for i in range(len(s)):
+    if i % 2 == 0:
+        new_s = new_s + s[i]
+print(f"Chuỗi mới sau khi xóa: " + new_s)
