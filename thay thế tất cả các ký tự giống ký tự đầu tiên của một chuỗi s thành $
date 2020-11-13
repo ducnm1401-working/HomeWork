@@ -4,4 +4,4 @@ for i in range(1, len(s)):
     if s[i] == s[0]:
         s = s.replace(s[i], '$')
 s = s[1::]
-print(first_character + s)
+print("Chuỗi sau khi xử lý: " + first_character + s)
