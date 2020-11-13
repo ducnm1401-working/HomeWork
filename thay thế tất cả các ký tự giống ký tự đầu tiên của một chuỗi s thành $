@@ -1,0 +1,7 @@
+s = str(input("Nhập chuỗi s: "))
+first_character = s[0]
+for i in range(1, len(s)):
+    if s[i] == s[0]:
+        s = s.replace(s[i], '$')
+s = s[1::]
+print(first_character + s)
