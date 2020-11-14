@@ -1,0 +1,5 @@
+A = [1, 1, 2, 2, 2, 3, 3, 3, 3, 4, 5, 6]
+B = [1, 2, 2, 4, 4]
+Max_count = max(set(A), key=A.count)
+# Max_count = max(set(A), key=B.count)
+print("Số xuất hiện nhiều nhất: " + str(Max_count))
