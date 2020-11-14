@@ -1,0 +1,20 @@
+mtr_a = [[1, 2, 3],
+         [4, 5, 6],
+         [7, 8, 9]]
+mtr_b = [[1, 2, 3],
+         [1, 1, 2],
+         [3, 2, 1]]
+
+kq = []
+hang_ngang = len(mtr_a)
+hang_doc = len(mtr_a[0])
+
+for a in range(hang_ngang):
+    kq_hang_ngang = []
+    for b in range(hang_doc):
+        kq_1_o = 0
+        for c in range(3):
+            kq_1_o += mtr_a[a][c] * mtr_b[c][b]
+        kq_hang_ngang.append(kq_1_o)
+    kq.append(kq_hang_ngang)
+print(kq)
