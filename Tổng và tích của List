@@ -1,0 +1,10 @@
+A = [2, -3, 9]
+
+sum_total = 0
+mul_number = 1
+
+for i in A:
+    sum_total = sum_total + i
+    mul_number = mul_number * i
+
+print("Tổng là: {} \nTích là: {}".format(sum_total, mul_number))
