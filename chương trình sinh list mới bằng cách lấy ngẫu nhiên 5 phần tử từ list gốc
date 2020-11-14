@@ -1,0 +1,9 @@
+import random
+
+first_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sec_list = []
+
+sec_list = random.choices(first_list, k=5)
+
+print("List ban đầu: \n{} ".format(first_list))
+print("List tự random 5 phần từ từ list cũ: \n{}".format(sec_list))
