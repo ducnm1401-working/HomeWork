@@ -1,0 +1,5 @@
+old_list = [1, 2, 3, 4]
+print("List cũ: " + str(old_list))
+s = input("Nhập s: ")
+new_list = ["{}{}".format(i, s) for i in old_list]
+print("List mới: " + str(new_list))
