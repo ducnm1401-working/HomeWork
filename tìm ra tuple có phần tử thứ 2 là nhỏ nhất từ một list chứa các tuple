@@ -1,0 +1,12 @@
+example = [(8, 4), (5, 1), (10, -7), (0, -8)]
+
+print(f"Ban đầu: {example}")
+
+for i in range(len(example)):
+    for j in range(len(example) - i - 1):
+        if example[j][1] > example[j + 1][1]:
+            temp = example[j]
+            example[j] = example[j + 1]
+            example[j + 1] = temp
+
+print(f"Phần từ nhỏ nhất là: {example[0]}")
