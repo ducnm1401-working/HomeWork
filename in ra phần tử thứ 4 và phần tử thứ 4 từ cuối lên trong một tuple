@@ -1,0 +1,6 @@
+tuple_example = (0, 1, 2, 3, 4, 5, 6, 7)
+
+print(tuple_example)
+
+print(f"Phần tử thứ 4: {tuple_example[3]}")
+print(f"Phần tử thứ 4 từ cuối lên: {tuple_example[-4]}")
