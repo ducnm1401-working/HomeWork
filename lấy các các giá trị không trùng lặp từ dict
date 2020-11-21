@@ -1,0 +1,11 @@
+dict_example = {1: 2, 6: 9, 2: 3, 3: 5, 4: 5, 7: 9}
+
+result = {}
+
+print(f"Dict ban đầu: {dict_example}")
+
+for key, value in dict_example.items():
+    if value not in result.values():
+        result[key] = value
+
+print(f"Dict sau khi xử lý: {result}")
