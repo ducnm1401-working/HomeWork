@@ -1,0 +1,5 @@
+a = {2: 1, 4: 3, 27.5: 4, 0.56: -2, -72: 8}
+
+print(f"Dict ban đầu: {a}")
+
+print(f"Dict sau khi sắp xếp: {sorted(a.items())}")
