@@ -1,0 +1,8 @@
+tuple_a = (1, 2.0, 3, 4, 6.1, -5.3, 0.2)
+print(f"Tuple có sẵn: {tuple_a}")
+sum_tuple_a = sum(list(tuple_a))
+print(f"Tổng các giá trị trong tuple: {sum_tuple_a}")
+max_value_tuple_a  = max(list(tuple_a))
+print(f"Giá trị lớn nhất trong tuple: {max_value_tuple_a}")
+
+
