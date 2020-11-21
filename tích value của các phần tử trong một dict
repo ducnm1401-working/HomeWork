@@ -1,0 +1,9 @@
+dictionary_1 = {"a": 1, "b": 3, "c": 4}
+
+print(f"Dictionary cho trước: {dictionary_1}")
+result = 1
+
+for i in dictionary_1:
+    result = result * dictionary_1[i]
+
+print(f"Kết quả phép nhân là: {result}")
