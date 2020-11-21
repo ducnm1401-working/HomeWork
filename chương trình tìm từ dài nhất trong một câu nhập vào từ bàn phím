@@ -1,0 +1,4 @@
+sentence = str(input("Nhập câu: "))
+print(sentence)
+longest_word = max(sentence.split(), key=len)
+print(f"Từ dài nhất là: {longest_word}")
