@@ -1,0 +1,15 @@
+example = (1, 2, 3, 4, 3)
+# example = (1, 2, 3, 4)
+
+print(f"Ban đầu: {example}")
+
+count = 0
+
+for i in example:
+    if example.count(i) > 1:
+        count += 1
+
+if count > 1:
+    print("Có phần từ giống nhau")
+else:
+    print("Không có phần từ giống nhau")
