@@ -1,0 +1,9 @@
+dictionary_1 = {"a": 1, "e": 3, "c": 4, "z": -2, "d": 8}
+
+print(f"Dict ban đầu: {dictionary_1}")
+
+key_max = max(dictionary_1, key=dictionary_1.get)
+key_min = min(dictionary_1, key=dictionary_1.get)
+
+print(f"Giá trị lớn nhất trong Dict là {key_max} : {dictionary_1[key_max]}"
+      f"\nGiá nhỏ nhất trong dict là {key_min} : {dictionary_1[key_min]}")
