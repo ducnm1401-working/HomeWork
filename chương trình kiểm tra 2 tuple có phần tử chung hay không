@@ -1,0 +1,19 @@
+tuple_A = ("A", "B", "C")
+tuple_B = (2, "D", 1)
+
+print(f"Tuple a: {tuple_A}")
+print(f"Tuple b: {tuple_B}")
+
+count = 0
+
+for i in tuple_A:
+    if i not in tuple_B:
+        flag = 0
+    else:
+        flag = 1
+        count += 1
+
+if count > 0:
+    print("Có phần tử chung")
+if count == 0:
+    print("Không có phần tử chung")
