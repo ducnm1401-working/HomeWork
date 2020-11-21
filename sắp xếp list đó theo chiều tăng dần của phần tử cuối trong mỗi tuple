@@ -1,0 +1,14 @@
+# example = [(2, 5), (4, 1), (0, 0)]
+
+example = [(9, 5), (5, 2), (10, 10), (0, 1)]
+
+print(f"Ban đầu: {example}")
+
+for i in range(len(example)):
+    for j in range(len(example) - i - 1):
+        if example[j][1] > example[j + 1][1]:
+            temp = example[j]
+            example[j] = example[j + 1]
+            example[j + 1] = temp
+
+print(f"Sau khi sắp xếp: {example}")
