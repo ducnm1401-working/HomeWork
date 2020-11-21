@@ -1,0 +1,6 @@
+lists = ["www.hust.edu.vn", "www.wikipedia.org", "www.asp.net", "www.amazon.com"]
+temp = []
+for i in lists:
+    hau_to = i.rsplit('.', 1)[-1]
+    temp.append(hau_to)
+print(temp)
