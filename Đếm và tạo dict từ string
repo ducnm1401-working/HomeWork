@@ -1,0 +1,10 @@
+string_example = str(input("Nhập chuỗi: "))
+
+dict_temp = {}
+
+for character in string_example:
+    dict_temp[character] = dict_temp.get(character, 0) + 1
+
+print('Chuỗi ban đầu: ' + string_example)
+
+print(dict_temp)
