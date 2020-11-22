@@ -1,0 +1,11 @@
+a = {1: 2, 3: 5, 5: 8}
+b = {1: 2, 4: 1, 7: 4, 3: 5, 6: 5}
+
+result = {}
+
+for key, value in a.items() and b.items():
+    if value in a.values() and b.values():
+        if key in a.keys() and b.keys():
+            result[key] = value
+
+print(f"Dict sau khi xử lý: {result}")
