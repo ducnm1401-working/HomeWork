@@ -1,0 +1,4 @@
+dict_template = dict(a=list(range(1, 10)), b=list(range(11, 20)), c=list(range(21, 30)), d=list(range(31, 40)))
+for i, j in dict_template.items():
+    print(
+        f"Giá trị phần tử thứ 5 trong phần value của phần tử {i} có các giá {j} là {dict_template[i][4]}")
