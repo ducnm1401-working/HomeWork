@@ -1,0 +1,5 @@
+a = {0: 3, 7: 4, 3: 1, 8: -5}
+
+print(f"Dict ban đầu: {a}")
+
+print(f"3 phần tử có value lớn nhất: {sorted(a.values(), reverse=True)[:3]}")
