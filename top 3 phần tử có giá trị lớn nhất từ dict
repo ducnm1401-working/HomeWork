@@ -1,5 +1,14 @@
-a = {0: 3, 7: 4, 3: 1, 8: -5}
+from collections import Counter
 
-print(f"Dict ban đầu: {a}")
+a = {0: 3, 7: 4, 3: 1, 8: -5, -4: 45, -52: 77, 88: 99, 1: 79}
 
-print(f"3 phần tử có value lớn nhất: {sorted(a.values(), reverse=True)[:3]}")
+counter = Counter(a)
+
+highest = counter.most_common(3)
+
+print(f'{a}')
+
+print("Top 3 phần tử có giá trị lớn nhất từ dict:")
+
+for i in highest:
+    print(f"Key {i[0]} : Value {i[1]}")
