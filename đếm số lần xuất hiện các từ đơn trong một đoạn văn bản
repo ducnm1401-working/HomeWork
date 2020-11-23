@@ -1,0 +1,13 @@
+string_input = str(input("Nhập chuỗi string: "))
+
+word = string_input.split()
+
+word_count_result = {}
+
+for i in word:
+    if i in word_count_result:
+        word_count_result[i] += 1
+    else:
+        word_count_result[i] = 1
+
+print(word_count_result)
