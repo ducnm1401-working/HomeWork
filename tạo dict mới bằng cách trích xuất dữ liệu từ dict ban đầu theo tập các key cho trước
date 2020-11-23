@@ -1,0 +1,12 @@
+sampleDict = {"name": "Kelly", "age": 25, "salary": 8000, "city": "New york"}
+
+keys = ["name", "salary"]
+
+new_dict = {}
+
+for k in keys:
+    if k in sampleDict:
+        dict_temp = {k: sampleDict[k]}
+        new_dict.update(dict_temp)
+
+print(new_dict)
