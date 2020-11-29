@@ -1,0 +1,9 @@
+def combine_2_file():
+    with open('abc.txt', encoding='utf-8') as fh1, open('test_file.txt', encoding='utf-8') as fh2:
+        for line1, line2 in zip(fh1, fh2):
+            f = open('temp.txt', mode='w', encoding='utf-8')
+            f.write(f'File abc.txt: {line1}' + f'\nFile test_file.txt: {line2}')
+
+combine_2_file()
+txt2 = open('temp.txt', encoding='utf-8')
+print(txt2.read())
