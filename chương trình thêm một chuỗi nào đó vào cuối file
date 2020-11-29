@@ -1,0 +1,11 @@
+def file_read(filename):
+    txt = open(filename, encoding='utf-8')
+    print(txt.read())
+    new_String = str(input(f'\nNhập chuỗi cần thêm: '))
+    with open(filename, mode="a", encoding='utf-8') as my_file:
+        my_file.write('\n')
+        my_file.write(new_String)
+    txt = open(filename, encoding='utf-8')
+    print(txt.read())
+
+file_read('test_file.txt')
