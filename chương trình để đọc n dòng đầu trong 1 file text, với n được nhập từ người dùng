@@ -1,0 +1,10 @@
+from itertools import islice
+
+def file_read_from_head(file_name, number_of_lines):
+    with open(file_name, encoding='utf-8') as file:
+        for line in islice(file, number_of_lines):
+            print(line)
+
+
+n = int(input(f'Nhập n dòng cần đọc: '))
+file_read_from_head('test_file.txt', n)
